@@ -25,7 +25,7 @@ angular.module('xelhark.ngTabcordion', []).directive('tabCordion', function () {
         };
       }
     ],
-    templateUrl: 'templates/TabCordion.html'
+    template: '<div class=\'tabbable\'>' + '<a ng-if=\'showCloseButton=="true"\' ng-click=\'close()\'>close</a>' + '<div ng-if=\'contentAbove=="true"\' class=\'tab-content\' ng-transclude></div>' + '<ul class=\'nav nav-tabs\'>' + '<li ng-repeat=\'pane in panes\' ng-class=\'{active:pane.selected}\'>' + '<a href=\'\' ng-click=\'select(pane)\'>{{pane.title}}</a>' + '</li>' + '</ul>' + '<div ng-if=\'contentAbove!="true"\' class=\'tab-content\' ng-transclude></div>' + '</div>'
   };
 }).directive('tabCordionPane', function () {
   return {
@@ -36,6 +36,6 @@ angular.module('xelhark.ngTabcordion', []).directive('tabCordion', function () {
     link: function (scope, element, attrs, tabsCtrl) {
       tabsCtrl.addPane(scope);
     },
-    templateUrl: 'templates/TabPane.html'
+    template: '<div class=\'tab-pane\' ng-class=\'{active: selected}\' ng-transclude></div>'
   };
 });

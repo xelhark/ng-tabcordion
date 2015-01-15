@@ -5,7 +5,7 @@
     "authors": [
         "Gabriele Platania <gabriele.platania@gmail.com>"
     ],
-    "main": ["dist/ng-tabcordion.min.js"],
+    "main": ["dist/ng-tabcordion.min.js", "dist/style.scss"],
     "ignore": [
         "**/.*",
         "node_modules",
@@ -17,7 +17,8 @@
     ],
     "version": "0.0.1",
     "dependencies": {
-        "angular": ">=1.2.18"
+        "angular": ">=1.2.18",
+        "bootstrap-sass": "~3.3.1"
     },
     "devDependencies": {
         "angular": "latest",

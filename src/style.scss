@@ -1,0 +1,16 @@
+
+$animationSpeed: 0.3s;
+
+.tab-content{
+  opacity: 0;
+  max-height: 0px;
+
+  @include transition(opacity $animationSpeed linear 0s, max-height $animationSpeed linear 0s);
+  &.active{
+
+    opacity: 1;
+    max-height: auto;
+    @include transition(opacity $animationSpeed linear 3*$animationSpeed, max-height $animationSpeed linear 2*$animationSpeed);
+
+  }
+}
