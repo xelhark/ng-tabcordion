@@ -1,16 +1,15 @@
-
 $animationSpeed: 0.3s;
 
-.tab-content{
+.tab-pane{
   opacity: 0;
   max-height: 0px;
 
-  @include transition(opacity $animationSpeed linear 0s, max-height $animationSpeed linear 0s);
+  @include transition(opacity $animationSpeed linear 0s, max-height $animationSpeed cubic-bezier(1,0,0,1) 0s);
   &.active{
 
     opacity: 1;
-    max-height: auto;
-    @include transition(opacity $animationSpeed linear 3*$animationSpeed, max-height $animationSpeed linear 2*$animationSpeed);
+    max-height: 999px;
+    @include transition(opacity $animationSpeed linear 3*$animationSpeed, max-height $animationSpeed cubic-bezier(1,0,0,1) 2*$animationSpeed);
 
   }
 }

@@ -16,7 +16,17 @@ In your web page:
 <script src="dist/ng-tabcordion.min.js"></script>
 ```
 
-Also, remember to add this module as a dependency to your module
+Currently I am only including the .scss version of the stylesheet, which is required to make it work. You will have
+to manually import this file into your scss main file, like this:
+
+```scss
+@import "ng-tabcordion/dist/style.scss";
+```
+
+*note* some scaffolding tools like yeoman will automatically
+detect the scss file and import it into your main scss file.
+
+Also, remember to add this module as a dependency to your app
 
 ```
 'xelhark.ngTabcordion'
@@ -27,6 +37,9 @@ Also, remember to add this module as a dependency to your module
 This package will create an animated tabbed menu that will automatically resize with a nice CSS3 animation when 
 changing its content. I honestly just did this for a project of mine, but I might add more stuff and animations
 if this gets any views.
+
+The animations are all done in CSS, which makes the app overall very lightweight, 
+but not compatible with older browsers.
 
 The current properties are:
 

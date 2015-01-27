@@ -13,7 +13,11 @@
         "src",
         "test",
         "karma.conf.js",
-        "examples"
+        "examples",
+        "Gruntfile.js",
+        "CONTRIBUTING.md",
+        "*.log",
+        "*.md"
     ],
     "version": "0.0.1",
     "dependencies": {
