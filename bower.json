@@ -1,33 +1,35 @@
 {
-    "name": "ng-tabcordion",
-    "homepage": "https://github.com/angular-ui/ui-select",
-    "description": "An Angularjs directive to combine tabs and accordion",
-    "authors": [
-        "Gabriele Platania <gabriele.platania@gmail.com>"
-    ],
-    "main": ["dist/ng-tabcordion.min.js", "dist/style.scss"],
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "src",
-        "test",
-        "karma.conf.js",
-        "examples",
-        "Gruntfile.js",
-        "CONTRIBUTING.md",
-        "*.log",
-        "*.md"
-    ],
-    "version": "0.0.1",
-    "dependencies": {
-        "angular": ">=1.2.18",
-        "bootstrap-sass": "~3.3.1"
-    },
-    "devDependencies": {
-        "angular": "latest",
-        "angular-mocks": "latest",
-        "jquery": "latest"
-    }
+  "name": "ng-tabcordion",
+  "homepage": "https://github.com/xelhark/ng-tabcordion",
+  "description": "An Angularjs directive to combine tabs and accordion",
+  "authors": [
+    "Gabriele Platania <gabriele.platania@gmail.com>"
+  ],
+  "main": [
+    "dist/ng-tabcordion.min.js",
+    "dist/style.scss"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src",
+    "test",
+    "karma.conf.js",
+    "examples",
+    "Gruntfile.js",
+    "CONTRIBUTING.md",
+    "*.log",
+    "*.md"
+  ],
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": ">=1.2.18",
+    "bootstrap-sass-official": "~3.3.3"
+  },
+  "devDependencies": {
+    "angular": "latest",
+    "angular-mocks": "latest",
+    "jquery": "latest"
+  }
 }
-
